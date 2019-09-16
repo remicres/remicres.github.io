@@ -2,6 +2,9 @@
     font-family: "Lato", sans-serif;
     margin: 0 auto;
   }
+  html, body {
+    height: 100%;
+  }
   .styled {
     border: 0;
     line-height: 2.5;
@@ -40,7 +43,7 @@
   .ol-zoomslider {
         top: 8px;
         left: auto;
-        right: 8px;
+        left: 64px;
         background-color: rgba(255,255,255,0.7);
         width: 200px;
         height: 15px;
@@ -63,4 +66,16 @@
       }
   a.ol-zoomslider-handle:hover {
         background-color: rgba(255,255,255,0.9);
+      }
+      .map:-moz-full-screen {
+        height: 100%;
+      }
+      .map:-webkit-full-screen {
+        height: 100%;
+      }
+      .map:-ms-fullscreen {
+        height: 100%;
+      }
+      .map:fullscreen {
+        height: 100%;
       }

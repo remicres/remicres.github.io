@@ -47,7 +47,7 @@
                 minZoom: resmin,
                 maxZoom: nRes
               }),
-              controls: ol.control.defaults().extend([new ol.control.LayerPopup()]),
+              controls: ol.control.defaults().extend([new ol.control.LayerPopup(), new ol.control.FullScreen()]),
               layers: layers
             });
       var zoomslider = new ol.control.ZoomSlider();
