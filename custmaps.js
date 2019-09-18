@@ -50,8 +50,8 @@
               controls: ol.control.defaults().extend([new ol.control.LayerPopup(), new ol.control.FullScreen()]),
               layers: layers
             });
-      var zoomslider = new ol.control.ZoomSlider();
-      map.addControl(zoomslider);
+//      var zoomslider = new ol.control.ZoomSlider();
+//      map.addControl(zoomslider);
       if (swipe){
         var ctrl = new ol.control.Swipe();
         map.addControl(ctrl);
@@ -67,7 +67,7 @@
     // Map1
     var urls1 = ['https://mdl4eo-cartes.irstea.fr/index.php/lizmap/service/?repository=supresol&project=super_resolution_v2',
                  'https://mdl4eo-cartes.irstea.fr/index.php/lizmap/service/?repository=supresol&project=super_resolution_v2',
-                 'https://mdl4eo-cartes.irstea.fr/index.php/lizmap/service/?repository=supresol&project=super_resolution'];
+                 'https://mdl4eo-cartes.irstea.fr/index.php/lizmap/service/?repository=supresol&project=super_resolution_v2'];
     var layers1 = ['Original S2 image ', 'High-res S2 image', 'Training patches footprint'];
     var map1 = newMap(urls1, layers1, 3857, 10, 18, 16, [453333, 5484830], 'map1', true, ", CESBIO, CNES")
 
