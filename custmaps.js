@@ -74,7 +74,7 @@
     // Map2
     var urls2 = ['https://mdl4eo-cartes.irstea.fr/index.php/lizmap/service/?repository=artisols&project=prototype'];
     var layers2 = ['mosa_map_full'];
-    var map2 = newMap(urls2, layers2, 3857, 7, 17, 7, [276396.294279, 5443539], 'map2')
+    var map2 = newMap(urls2, layers2, 3857, 7, 17, 6, [276396.294279, 6443539], 'map2')
 
     // Map2 legend
     var mainbar = new ol.control.Bar();
