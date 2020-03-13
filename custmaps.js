@@ -86,7 +86,7 @@
     // Map3
     var urls3 = ['https://mdl4eo-cartes.irstea.fr/index.php/lizmap/service/?repository=tosca20&project=prototype'];
     var layers3 = ['mosa_map_full', 'mosa_map_full_2018', 'mosa_map_full_2017', 'mosa_map_full_2016'];
-    var map3 = newMap(urls3, layers3, 3857, 7, 17, 6, [276396.294279, 6443539], 'map3', false, "", new ol.source.Stamen({layer: 'toner'}))
+    var map3 = newMap(urls3, layers3, 3857, 7, 17, 6, [276396.294279, 6043539], 'map3', false, "", new ol.source.Stamen({layer: 'toner'}))
 
     // Map3 legend
     var mainbar3 = new ol.control.Bar();
