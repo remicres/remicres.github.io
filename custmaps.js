@@ -19,7 +19,7 @@
         newLayer = new ol.layer.Tile({
           title: layers_name[i],
           source: new ol.source.WMTS({
-                attributions: 'Remi CRESSON (UMR TETIS/IRSTEA)' + legend,
+                attributions: 'Remi CRESSON (UMR TETIS/INRAE)' + legend,
                 url: wmts_urls[i],
                 layer: layers_name[i],
                 baseLayer: true,
@@ -84,13 +84,13 @@
     mainbar.addControl(selectCtrl);
 
     // Map3
-    var urls3 = ['https://mdl4eo-cartes.irstea.fr/index.php/lizmap/service/?repository=occmap&project=occitanie_map'];
-    var layers3 = ['The_occitanie_map_full_V2'];
-    var map3 = newMap(urls3, layers3, 3857, 7, 17, 16, [430803, 5404991], 'map3', false, "", new ol.source.Stamen({layer: 'toner'}))
+    var urls3 = ['https://mdl4eo-cartes.irstea.fr/index.php/lizmap/service/?repository=tosca20&project=prototype'];
+    var layers3 = ['mosa_map_full', 'mosa_map_full_2018', 'mosa_map_full_2017', 'mosa_map_full_2016'];
+    var map3 = newMap(urls3, layers3, 3857, 7, 17, 7, [276396.294279, 5443539], 'map3', false, "", new ol.source.Stamen({layer: 'toner'}))
 
     // Map3 legend
     var mainbar3 = new ol.control.Bar();
     map3.addControl(mainbar3);
     mainbar3.setPosition("top-left");
-    var selectCtrl3 = new ol.control.Toggle({html: '<img src="https://mdl4eo-cartes.irstea.fr/index.php/lizmap/service/?repository=occmap&project=occitanie_map&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetLegendGraphic&LAYER=The_occitanie_map_full_V2&STYLE=default&EXCEPTIONS=application%2Fvnd.ogc.se_inimage&FORMAT=image%2Fpng&TRANSPARENT=TRUE&WIDTH=150&LAYERFONTSIZE=0&ITEMFONTSIZE=9&SYMBOLSPACE=1&ICONLABELSPACE=2&DPI=96&LAYERSPACE=0&LAYERFONTBOLD=FALSE&LAYERTITLE=FALSE&SCALE=36111.90963802185" style="background-color:white";>' });
+    var selectCtrl3 = new ol.control.Toggle({html: '<img src="https://mdl4eo-cartes.irstea.fr/index.php/lizmap/service/?repository=tosca20&project=prototype&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetLegendGraphic&LAYER=mosa_map_full&STYLE=default&EXCEPTIONS=application%2Fvnd.ogc.se_inimage&FORMAT=image%2Fpng&TRANSPARENT=TRUE&WIDTH=150&LAYERFONTSIZE=0&ITEMFONTSIZE=9&SYMBOLSPACE=1&ICONLABELSPACE=2&DPI=96&LAYERSPACE=0&LAYERFONTBOLD=FALSE&LAYERTITLE=FALSE&SCALE=36111.90963802185" style="background-color:white";>' });
     mainbar3.addControl(selectCtrl3);
